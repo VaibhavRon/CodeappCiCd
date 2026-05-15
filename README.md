@@ -1,4 +1,4 @@
-# 💻 PairCode Studio — Real-Time Collaborative Coding & Chat Platform
+# 💻 Code Pair Studio — Real-Time Collaborative Coding & Chat Platform
 
 **PairCode Studio** is a powerful, real-time collaborative coding web app that lets users write and share code together in multiple programming languages — with integrated live chat for seamless communication.
 
@@ -20,17 +20,13 @@ Whether you're pair programming, teaching, debugging with teammates, or conducti
 
 ---
 
-## 📸 Demo
 
-> Coming soon: [Live Demo](https://your-app-url.com)
-
----
 
 ## 🛠️ Installation & Setup
 
 ```bash
 # Clone the repo
-git clone https://github.com/Vaibhav-Kumar-K-R/PairCode-Studio.git
+git clone https://github.com/Vaibhav-Kumar-K-R/CodePair-Studio.git
 cd PairCode-Studio/
 
 # Install dependencies for both frontend and backend
