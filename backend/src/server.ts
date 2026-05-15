@@ -313,21 +313,16 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.post("/api/stream-token", (req, res) => {
-  // 1. Authenticate the user (e.g., check session or credentials)
-  //@ts-ignore
+
 
   //@ts-ignore
-  const authenticatedUser = req.body; // Get user from session/auth middleware
-
-  // 3. Sign the token securely using the server's environment variable
+  const authenticatedUser = req.body;
   const token = jwt.sign(
     authenticatedUser,
     process.env.STREAM_SECRET_KEY as string,
     { expiresIn: "24h" },
   );
 
-
-  // 4. Send ONLY the token back to the client
   res.json({ token });
 });
 
