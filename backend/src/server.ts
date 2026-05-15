@@ -272,10 +272,7 @@ io.on("connection", (socket) => {
     const roomId = user.roomId;
     socket.broadcast.to(roomId).emit(SocketEvent.TYPING_PAUSE, { user });
   });
-
-
-
-  	
+//Drawing update request handler
 
 	socket.on(SocketEvent.REQUEST_DRAWING, () => {
 		const roomId = getRoomId(socket.id)
@@ -284,7 +281,7 @@ io.on("connection", (socket) => {
 			.to(roomId)
 			.emit(SocketEvent.REQUEST_DRAWING, { socketId: socket.id })
 	})
-
+//Drawing update sync handler
 	socket.on(SocketEvent.SYNC_DRAWING, ({ drawingData, socketId }) => {
 		socket.broadcast
 			.to(socketId)
@@ -301,7 +298,7 @@ io.on("connection", (socket) => {
   
 });
 
-
+//This is the server health check endpoint for checking server status
 
 const PORT = process.env.PORT || 3000;
 
