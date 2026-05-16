@@ -1,3 +1,5 @@
+// Main server entry point: sets up Express, Socket.IO, and all real-time
+// collaboration events (rooms, files, chat, drawing, voice).
 import http from "http";
 import path from "path";
 import cors from "cors";
